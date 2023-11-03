@@ -379,6 +379,9 @@ aside ul {
     align-items: center;
     width: 40%;
   }
+  .nav-link {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 580px) {
   .banner-container {
@@ -430,6 +433,7 @@ aside ul {
   .nav-link {
     display: block;
     margin: 0;
+    font-size: 12px;
   }
   .nav-item {
     padding: 0.5rem 0;
