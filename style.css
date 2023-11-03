@@ -77,10 +77,10 @@ header {
 .dog__food {
   position: relative;
   bottom: -3rem;
-  width: 30%;
+  width: 35%;
 }
 .banner__dog {
-  width: 20%;
+  width: 30%;
 }
 .banner__text {
   display: flex;
