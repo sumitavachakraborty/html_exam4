@@ -1,0 +1,508 @@
+@font-face {
+  font-family: Cent;
+  src: url(CentSchbkCyrill.ttf);
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Cent';
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Cent';
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+li{
+  list-style-type: none;
+}
+ul{
+  padding: 0;
+}
+
+header{
+  background-color: rgba(76,174,201,255);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding: 2rem;
+  margin: 0 auto;
+  position: relative;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(76,174,201,255);
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+.hamburger, #checkbox-toggle{
+  display: none;
+  color: #fff;
+}
+.nav-link{
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+
+.banner{
+  background-color: #4caec9;
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+  
+}
+.banner-container{
+  max-width: 1400px;
+  justify-content: center;
+}
+
+.dog__food{
+ position: relative;
+ bottom: -3rem;
+ width: 30%;
+}
+.banner__dog{
+  width: 20%;
+}
+.banner__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.banner__text > h1{
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #715258;
+}
+.banner__text > img{
+  width: 90%;
+}
+
+
+
+.story__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.story__content > img {
+  width: 25%;
+}
+
+.story__content__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 25%;
+}
+
+.story__content__heading > h2 {
+  font-size: 41px;
+  font-weight: 700;
+  color: rgba(76,38,47,255);
+}
+
+.story__content__heading > h3 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: rgba(76,174,201,255);
+  margin-top: -25px;
+}
+
+.story__content__text{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story__content__text > p{
+  font-size: 22px;
+  font-weight: 600;
+  color: #8d8d8d;
+  margin-bottom: 4rem;
+}
+.story__content__text > a{
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(76,174,201,255);
+}
+
+.receipe{
+  /* position: relative; */
+  background-image: url(assets/bg_image.png);
+  height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: rgb(36, 35, 35,0.8);
+}
+
+.receipe__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+.receipe__content > h3 {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.receipe__content > h2 {
+  font-size: 62px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.receipe__content > p {
+  font-size: 20px;
+  font-weight: 300;
+  width: 60%;
+  text-align: center;
+  
+}
+
+.life > figure{
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.life > figure > img {
+  width: 20%;
+}
+
+.life > figure > figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 70%;
+}
+
+.life > figure > figcaption > h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #67454c;
+}
+
+.life > figure > figcaption > p{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.life > figure > figcaption > button{
+  width: 20%;
+  border: 0;
+  background-color: #4caec9;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+}
+
+.food > figure{
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.food > figure > img {
+  width: 30%;
+}
+
+.food > figure > figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 60%;
+}
+
+.food > figure > figcaption > h3 {
+  font-size: 2.5rem;
+  width: 60%;
+  font-weight: 600;
+  color: #67454c;
+}
+
+.food > figure > figcaption > p{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.food > figure > figcaption > button{
+  width: 35%;
+  border: 0;
+  background-color: #4caec9;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+}
+
+aside ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-left: 0;
+}
+
+.footer-container{
+  display: flex;
+}
+.footer__dog{
+width: 40%;
+
+}
+aside{
+  width: 50%;
+  margin-left: 5rem;
+  
+}
+aside ul{
+  justify-content: flex-start;
+}
+.social-media-icons li i{
+  background-color:  #4caec9;
+  font-size: larger;
+  border-radius: 2rem;
+}
+.bottom__footer {
+  font-weight: 600;
+}
+@media screen and (max-width: 1024px){
+  html{
+    font-size: 12px;
+  }
+  .logo{
+    width: 100px;
+  }
+  
+
+  .story__content__heading {
+    width: 20%;
+  }
+  .story__content__heading > h2 {
+    font-size: 2.5rem;
+  }
+  .story__content__heading > h3 {
+    font-size: 4.5rem;
+    margin-top: -15px;
+  }
+  .story__content__text {
+    width: 35%;
+    font-size: 0.8rem;
+  }
+  .story__content__text > p {
+    font-size: 1.2rem;
+  }
+
+  .story__content > img {
+    width: 20%;
+  }
+
+  .receipe__content > h3 {
+    font-size: 1.5rem;
+  }
+  
+  .receipe__content > h2 {
+    font-size: 4rem;
+  }
+  
+  .receipe__content > p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+  .life > figure > figcaption > button{
+    width: 25%;
+    font-size: 0.8rem;
+  }
+
+  .food > figure > figcaption > button{
+    width: 35%;
+    font-size: 0.8rem;
+  }
+  .food > figure > figcaption > h3 {
+    width: 100%;
+  }
+  .banner__text > h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #715258;
+  }
+  .dog__food{
+    position: relative;
+    bottom: -3rem;
+    width: 30%;
+   }
+   .banner__dog{
+     width: 20%;
+   }
+   .banner__text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 40%;
+   }
+   
+} 
+@media screen and (max-width: 580px){
+  
+  .banner-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .dog__food{
+    width: 50%;
+   }
+  .banner__dog{
+    width: 50%;
+  }
+  .banner__text{
+    width: 90%;
+  }
+  .story__content__heading {
+    width: 50%;
+  }
+  .story__content__text {
+    width: 50%;
+  }
+  .story__content > img {
+    width: 50%;
+  }
+  
+  .hamburger {
+    display: block;
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+  .navigation{
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    left: -200%;
+    top: 100%;
+    z-index: 99;
+    border-bottom: 1px solid #c1c3c5;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-menu{
+    flex-direction: column;
+  }
+  .nav-link {
+    display: block;
+    margin: 0;
+  }
+  .nav-item {
+    padding: 0.5rem 0;
+  }
+  input[type="checkbox"]:checked ~ .navigation {
+    left: 0;
+  }
+  .life > figure{
+    justify-content: center;
+  }
+
+  .life > figure > img {
+    width: 40%;
+  }
+  .life > figure > figcaption > button{
+    width: 35%;
+    font-size: 0.9rem;
+  }
+  .food > figure{
+    justify-content: center;
+  }
+
+  .food > figure > img {
+    width: 40%;
+  }
+  .food > figure > figcaption > button{
+    width: 35%;
+    font-size: 0.9rem;
+  }
+  .footer-container{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .story__content__heading {
+    width: 100%;
+  }
+  .story__content__text {
+    width: 100%;
+  }
+  .story__content > img {
+    width: 50%;
+  }
+
+  .receipe__content > h3 {
+    font-size: 1.5rem;
+  }
+  
+  .receipe__content > h2 {
+    font-size: 2.5rem;
+  }
+  
+  .receipe__content > p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .life > figure > figcaption{
+    width: 90%;
+  }
+  .food > figure > figcaption{
+    width: 90%;
+  }
+
+  .life > figure > figcaption > button{
+    width: 40%;
+    font-size: 0.8rem;
+  }
+  .food > figure > figcaption > button{
+    width: 40%;
+    font-size: 0.8rem;
+  }
+}
