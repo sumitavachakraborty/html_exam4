@@ -63,6 +63,9 @@ header {
   cursor: pointer;
   text-transform: uppercase;
 }
+.nav-link:hover{
+  color: blue !important;
+}
 
 .banner {
   background-color: #4caec9;
@@ -227,7 +230,12 @@ header {
   font-weight: 600;
   padding: 1rem 1.5rem;
 }
-
+.life > figure > figcaption > button:hover{
+  background-color: blue;
+}
+.food > figure > figcaption > button:hover{
+  background-color: blue;
+}
 .food > figure {
   display: flex;
   gap: 2rem;
